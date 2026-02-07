@@ -1,0 +1,209 @@
+.blog-header-section {
+    background: #000000;
+    direction: rtl;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+/* Grid Background */
+.grid-background {
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 85, 0, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 1;
+}
+
+.blog-glow {
+    background: radial-gradient(circle at center, rgba(172, 66, 0, 0.229) 0%, transparent 70%);
+    z-index: 2;
+}
+
+/* Badge */
+.blog-badge {
+    background: rgba(255, 96, 0, 0.1);
+    border-color: rgba(255, 96, 0, 0.3) !important;
+}
+
+.blog-badge i {
+    color: #F3A900;
+    font-size: 16px;
+}
+
+.blog-badge .badge-text {
+    color: #F3A900;
+    font-size: 15px;
+}
+
+.badge-dot {
+    width: 8px;
+    height: 8px;
+    background: #FF6000;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(0.8);
+    }
+}
+
+/* Highlight */
+.highlight-text {
+    color: #F3A900;
+}
+
+/* Subtitle Color */
+.blog-subtitle {
+    color: #888;
+}
+
+
+.blog-grid-section {
+    background: linear-gradient(135deg, #0A0A0A 0%, #1a1410 100%);
+
+    min-height: 100vh;
+}
+
+/* Filter Buttons */
+.filter-btn {
+    background: rgba(255, 255, 255, 0.05);
+    color: #888;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.filter-btn.active {
+    background: linear-gradient(90deg, #F3A900, #F65000);
+    color: white;
+}
+
+/* Search Box */
+.search-box input {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.search-box input:focus {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 96, 0, 0.3) !important;
+    box-shadow: 0 0 0 3px rgba(255, 96, 0, 0.1);
+}
+
+.search-box input::placeholder {
+    color: #666;
+}
+
+.search-box i {
+    color: #666;
+    pointer-events: none;
+}
+
+/* View Toggle */
+.view-toggle-btn {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.btn-view {
+    background: transparent;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.btn-view:hover {
+    color: #fff;
+}
+
+.btn-view.active {
+    background: linear-gradient(90deg, #F3A900, #F65000);
+    color: white;
+}
+
+/* Blog Card */
+.blog-card {
+    background: linear-gradient(135deg, #1a1a1a 0%, #141414 100%);
+    border-color: rgba(255, 255, 255, 0.05) !important;
+    transition: all 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 96, 0, 0.3) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.blog-card-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.blog-card-image img {
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.blog-card:hover .blog-card-image img {
+    transform: scale(1.1);
+}
+
+.category-badge {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.blog-card-title {
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.blog-card:hover .blog-card-title {
+    color: #F3A900 !important;
+}
+
+.blog-card-excerpt {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Author */
+.author-avatar {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border: 2px solid rgba(255, 96, 0, 0.3);
+}
+
+/* Read Button */
+.read-btn {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 96, 0, 0.1);
+    border: 1px solid rgba(255, 96, 0, 0.2) !important;
+    color: #F65000;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.read-btn:hover {
+    background: linear-gradient(90deg, #F3A900, #F65000);
+    color: white;
+    border-color: transparent !important;
+    transform: scale(1.1);
+}

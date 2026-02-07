@@ -1,0 +1,88 @@
+.my-nav{
+
+    background-color: #161616;
+
+}
+#logo span{
+    color: white;
+    
+}
+#logo p{
+    color: #D47313;
+    
+}
+#logo .nav-img{
+    width: 50px;
+    height: 50px;
+    margin-inline: 20px;
+    
+}
+.startReading{
+    padding-inline: 30px;
+    padding-block: 12px ;
+    background-color: #FA5600;
+    color: white;
+    border-radius: 55px;
+    cursor: pointer;
+}
+.searchBtn:hover{
+    color: OKLCH(0.705 0.213 47.604)
+    ;
+    background-color: #161616;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    
+}
+.searchBtn{
+   margin-inline: 7px ;
+   color: #737373 ;
+   cursor: pointer;
+}
+
+.custom-navbar-center {
+    background-color: #1a1a1a;
+    padding: 5px 8px;
+    border-radius: 50px;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    direction: rtl; 
+}
+
+.custom-navbar-center .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    margin-bottom: 0 !important;
+    padding: 0;
+    list-style: none;
+}
+
+.custom-navbar-center .nav-link {
+    color: white !important;
+    font-size: 16px;
+    padding: 8px 20px !important; 
+    transition: color 0.3s;
+}
+
+.custom-navbar-center .nav-link:hover {
+    color: #fff !important;
+}
+
+.btn-primary-custom {
+    background: linear-gradient(90deg, #ff8c00, #ff5722); /* تدرج لونه شيك */
+    color: white !important;
+    border: none;
+    padding: 10px 30px !important; /* مساحة أكبر للزرار عشان يبان زي الصورة */
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-primary-custom:hover {
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
